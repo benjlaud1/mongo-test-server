@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
     console.log('====================================');
     console.log('index hit');
     console.log('====================================');
-    res.sendFile('views/index.html');
+    res.sendFile(path.resolve('public/views/index.html'));
 })
 
 app.listen(app.get('port'), function(){
